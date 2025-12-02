@@ -61,14 +61,6 @@
             text-decoration: underline;
         }
 
-        /* Status Dots */
-        .status-dot-green {
-            height: 8px; width: 8px; background-color: #10b981; border-radius: 50%; display: inline-block;
-        }
-        .status-dot-blue {
-            height: 8px; width: 8px; background-color: #3b82f6; border-radius: 50%; display: inline-block;
-        }
-
         /* Scroll margin para que el header no tape el título al navegar */
         section {
             scroll-margin-top: 100px;
@@ -98,7 +90,7 @@
     <main class="max-w-6xl mx-auto px-4 -mt-10 relative z-10 pb-20 space-y-24">
 
         <!-- 1. TABLA RESUMEN -->
-        <div class="paper-sheet p-8 md:p-12">
+        <div class="paper-sheet p-6 md:p-12">
             <div class="flex justify-between items-end mb-8 border-b border-gray-200 pb-4">
                 <div>
                     <h2 class="serif-font text-2xl md:text-3xl text-gray-800">Overview</h2>
@@ -106,6 +98,7 @@
                 </div>
             </div>
 
+            <!-- Tabla con scroll horizontal en móvil -->
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse min-w-[900px]">
                     <thead>
@@ -161,7 +154,7 @@
                             </td>
                         </tr>
 
-                        <!-- 1881 per Sagardi (NEW) -->
+                        <!-- 1881 per Sagardi -->
                         <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
                             <td class="py-5 pl-4">
                                 <span class="font-bold text-gray-800 block text-base serif-font">1881 per Sagardi</span>
@@ -216,7 +209,7 @@
                                 <span class="text-[12px] text-[#C8B29B] font-bold">4.4 ★</span>
                             </td>
                             <td class="py-5 px-2 text-xs leading-relaxed">
-                                Open Kitchen. <strong class="text-amber-600">Note: 21:30h Seating.</strong> Option for Open Bar (+€45).
+                                Open Kitchen. <span class="text-gray-500 italic">* Late seating at 21:30h.</span> Option for Open Bar (+€45).
                             </td>
                             <td class="py-5 px-2 text-right font-bold text-gray-800">€ 75</td>
                             <td class="py-5 px-2 text-center">
@@ -256,7 +249,7 @@
              ============================================== -->
 
         <!-- SECTION: CINC SENTITS -->
-        <section id="cincsentits" class="paper-sheet p-8 md:p-16">
+        <section id="cincsentits" class="paper-sheet p-6 md:p-16">
             <div class="border border-[#e5dcd3] p-8 md:p-12">
                 <div class="text-center mb-10">
                     <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Exclusive Venue Proposal</p>
@@ -310,11 +303,8 @@
         </section>
 
         <!-- SECTION: COMPARTIR -->
-        <section id="compartir" class="paper-sheet p-8 md:p-16">
+        <section id="compartir" class="paper-sheet p-6 md:p-16">
             <div class="border border-[#e5dcd3] p-8 md:p-12 relative">
-                <div class="absolute top-6 left-0 w-full text-center opacity-5">
-                    <span class="text-6xl font-bold uppercase tracking-widest">Heyvi</span>
-                </div>
                 <div class="text-center mb-10 relative z-10">
                     <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Detailed Menu Proposal</p>
                     <h2 class="serif-font text-4xl text-gray-800 uppercase">Compartir</h2>
@@ -347,9 +337,11 @@
                         </div>
                         <div class="mt-8 bg-[#f9f7f5] p-6 border border-[#efe9e4]">
                             <h4 class="text-xs font-bold uppercase tracking-widest text-[#C8B29B] mb-2">Premium Cellar</h4>
-                            <p class="text-xs text-gray-600 mb-1">🍷 Taleia 2021 (Castell d’Encus)</p>
-                            <p class="text-xs text-gray-600 mb-1">🍷 Penafión 2021 (Abadía Da Cova)</p>
-                            <p class="text-xs text-gray-600">🥂 Imperial Brut 2018 (Gramona)</p>
+                            <ul class="text-xs text-gray-600 space-y-2">
+                                <li><span class="font-medium text-gray-800">Taleia 2021</span> <span class="text-gray-400 text-[10px]">| Castell d’Encus</span></li>
+                                <li><span class="font-medium text-gray-800">Penafión 2021</span> <span class="text-gray-400 text-[10px]">| Abadía Da Cova</span></li>
+                                <li><span class="font-medium text-gray-800">Imperial Brut 2018</span> <span class="text-gray-400 text-[10px]">| Gramona</span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -360,8 +352,60 @@
             </div>
         </section>
 
-        <!-- SECTION: 1881 PER SAGARDI (NEW) -->
-        <section id="sagardi" class="paper-sheet p-8 md:p-16">
+        <!-- SECTION: MANA 75 -->
+        <section id="mana75" class="paper-sheet p-6 md:p-16">
+            <div class="border border-[#e5dcd3] p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Detailed Menu Proposal</p>
+                    <h2 class="serif-font text-4xl text-gray-800 uppercase">MANÁ 75</h2>
+                    <h3 class="serif-font text-xl text-beige italic">Barceloneta</h3>
+                    <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
+                    <p class="text-xs text-gray-500 mt-2 italic flex items-center justify-center gap-1">
+                        <span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-400"></span> 
+                        Please note: Late seating availability at 21:30h
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-gray-800 mb-4 border-b pb-2">Starters (To Share)</h4>
+                        <ul class="space-y-2 text-xs text-gray-600">
+                            <li>Iberian Bellota Ham & Tomato Bread</li>
+                            <li>Andalusian Style Squids w/ Kimchi Mayo</li>
+                            <li>Chicken Croquettes</li>
+                            <li>Oriental Salmon Tartare</li>
+                            <li>Burrata & Tomato Salad</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest text-gray-800 mb-4 border-b pb-2">Main Course (Choice)</h4>
+                        <ul class="space-y-2 text-xs text-gray-600">
+                            <li><strong>Norway Lobster & Scallops Paella</strong></li>
+                            <li>Meat Paella (Sausage & Ribs)</li>
+                            <li>Seasonal Vegetable Paella</li>
+                            <li>Honeyed Smooth Veal</li>
+                            <li>Monkfish Tail "Santurce Style"</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 bg-[#f9f7f5] p-4 border border-[#efe9e4] flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                    <div class="w-full md:w-1/2">
+                        <h4 class="text-[10px] font-bold uppercase text-[#C8B29B] mb-1">Included Drinks</h4>
+                        <p class="text-[10px] text-gray-600">Wine (1 bottle/3 pax) + Water & Coffee + 2 Beers/Soft drinks.</p>
+                    </div>
+                    <div class="w-full md:w-1/2 border-t md:border-t-0 md:border-l border-gray-200 pt-2 md:pt-0 md:pl-4">
+                        <h4 class="text-[10px] font-bold uppercase text-gray-500 mb-1">Optional Upgrade</h4>
+                        <p class="text-[10px] text-gray-600"><strong>Standard Open Bar (2h):</strong> + €45 / pax <br><span class="text-gray-400 italic">(Includes Long Drinks: Gin, Vodka, etc.)</span></p>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-gray-100 text-center">
+                    <span class="text-3xl serif-font font-bold text-gray-800">€ 75</span>
+                    <span class="text-xs text-gray-400 uppercase">/ person (VAT Incl.)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: 1881 PER SAGARDI -->
+        <section id="sagardi" class="paper-sheet p-6 md:p-16">
             <div class="border border-[#e5dcd3] p-8 md:p-12">
                 <div class="text-center mb-10">
                     <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Detailed Menu Proposal</p>
@@ -439,57 +483,8 @@
             </div>
         </section>
 
-        <!-- SECTION: MANA 75 -->
-        <section id="mana75" class="paper-sheet p-8 md:p-16">
-            <div class="border border-[#e5dcd3] p-8 md:p-12">
-                <div class="text-center mb-10">
-                    <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Detailed Menu Proposal</p>
-                    <h2 class="serif-font text-4xl text-gray-800 uppercase">MANÁ 75</h2>
-                    <h3 class="serif-font text-xl text-beige italic">Barceloneta</h3>
-                    <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
-                    <p class="text-xs text-amber-600 mt-2 font-bold bg-amber-50 inline-block px-2 py-1 rounded">Note: Late Seating 21:30h</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
-                    <div>
-                        <h4 class="text-xs font-bold uppercase tracking-widest text-gray-800 mb-4 border-b pb-2">Starters (To Share)</h4>
-                        <ul class="space-y-2 text-xs text-gray-600">
-                            <li>Iberian Bellota Ham & Tomato Bread</li>
-                            <li>Andalusian Style Squids w/ Kimchi Mayo</li>
-                            <li>Chicken Croquettes</li>
-                            <li>Oriental Salmon Tartare</li>
-                            <li>Burrata & Tomato Salad</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="text-xs font-bold uppercase tracking-widest text-gray-800 mb-4 border-b pb-2">Main Course (Choice)</h4>
-                        <ul class="space-y-2 text-xs text-gray-600">
-                            <li><strong>Norway Lobster & Scallops Paella</strong></li>
-                            <li>Meat Paella (Sausage & Ribs)</li>
-                            <li>Seasonal Vegetable Paella</li>
-                            <li>Honeyed Smooth Veal</li>
-                            <li>Monkfish Tail "Santurce Style"</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-8 bg-[#f9f7f5] p-4 border border-[#efe9e4] flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-                    <div class="w-full md:w-1/2">
-                        <h4 class="text-[10px] font-bold uppercase text-[#C8B29B] mb-1">Included Drinks</h4>
-                        <p class="text-[10px] text-gray-600">Wine (1 bottle/3 pax) + Water & Coffee + 2 Beers/Soft drinks.</p>
-                    </div>
-                    <div class="w-full md:w-1/2 border-t md:border-t-0 md:border-l border-gray-200 pt-2 md:pt-0 md:pl-4">
-                        <h4 class="text-[10px] font-bold uppercase text-gray-500 mb-1">Optional Upgrade</h4>
-                        <p class="text-[10px] text-gray-600"><strong>Standard Open Bar (2h):</strong> + €45 / pax <br><span class="text-gray-400 italic">(Includes Long Drinks: Gin, Vodka, etc.)</span></p>
-                    </div>
-                </div>
-                <div class="mt-8 pt-6 border-t border-gray-100 text-center">
-                    <span class="text-3xl serif-font font-bold text-gray-800">€ 75</span>
-                    <span class="text-xs text-gray-400 uppercase">/ person (VAT Incl.)</span>
-                </div>
-            </div>
-        </section>
-
         <!-- SECTION: MESAQUINCE -->
-        <section id="mesaquince" class="paper-sheet p-8 md:p-16">
+        <section id="mesaquince" class="paper-sheet p-6 md:p-16">
             <div class="border border-[#e5dcd3] p-8 md:p-12">
                 <div class="text-center mb-10">
                     <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Detailed Menu Proposal</p>
@@ -530,7 +525,7 @@
         </section>
 
         <!-- SECTION: TEJADA MAR -->
-        <section id="tejadamar" class="paper-sheet p-8 md:p-16">
+        <section id="tejadamar" class="paper-sheet p-6 md:p-16">
             <div class="border border-[#e5dcd3] p-8 md:p-12">
                 <div class="text-center mb-10">
                     <p class="text-[0.6rem] uppercase tracking-[0.4em] text-gray-400 mb-2">Detailed Menu Proposal</p>
@@ -593,4 +588,3 @@
 
 </body>
 </html>
-
