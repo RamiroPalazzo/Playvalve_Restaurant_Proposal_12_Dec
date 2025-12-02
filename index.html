@@ -49,6 +49,7 @@
         .btn-view:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(200, 178, 155, 0.4);
+            background-color: #b09b86;
         }
         
         /* Link de Mapa */
@@ -88,7 +89,7 @@
         <p class="text-xs uppercase tracking-[0.4em] text-[#C8B29B] mb-4 animate-fade-in">Corporate Experience</p>
         <h1 class="text-4xl md:text-6xl mb-6 tracking-wide">Venue Selection</h1>
         <p class="text-gray-400 font-light max-w-xl mx-auto text-sm leading-relaxed">
-            A curated selection of Barcelona's finest dining experiences for your group. 
+            This bespoke proposal presents a curated selection of Barcelona's finest dining experiences, specifically researched for your group. 
             Please review the comparative table below and explore the detailed menus.
         </p>
         <div class="mt-8 text-xs text-gray-500 font-mono">Date: Dec 12, 2025 | Pax: 26</div>
@@ -106,13 +107,14 @@
             </div>
 
             <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse min-w-[800px]">
+                <table class="w-full text-left border-collapse min-w-[900px]">
                     <thead>
                         <tr class="bg-[#fdfbf9] text-xs uppercase tracking-widest text-gray-500 border-b border-[#C8B29B]">
                             <th class="py-4 pl-4 font-bold w-[25%]">Venue & Location</th>
+                            <th class="py-4 px-2 font-bold w-[10%] text-center">Rating</th>
                             <th class="py-4 px-2 font-bold w-[35%]">Concept</th>
                             <th class="py-4 px-2 font-bold text-right w-[15%]">Est. Price</th>
-                            <th class="py-4 px-2 text-center w-[10%]">Action</th>
+                            <th class="py-4 px-2 text-center w-[15%]">Action</th>
                         </tr>
                     </thead>
                     <tbody class="text-sm text-gray-600">
@@ -121,20 +123,21 @@
                         <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
                             <td class="py-5 pl-4">
                                 <span class="font-bold text-gray-800 block text-base serif-font">Cinc Sentits</span>
-                                <div class="flex items-center gap-2 mt-1">
-                                    <span class="text-[10px] text-[#C8B29B] font-bold">4.7 ★</span> 
-                                    <span class="text-[10px] text-gray-300">|</span>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=Cinc+Sentits+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1">
-                                        📍 Eixample
-                                    </a>
-                                </div>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Cinc+Sentits+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1 mt-1" title="View on Google Maps">
+                                    <!-- Icono Mapa Sutil -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    Eixample
+                                </a>
+                            </td>
+                            <td class="py-5 px-2 text-center">
+                                <span class="text-[12px] text-[#C8B29B] font-bold">4.7 ★</span>
                             </td>
                             <td class="py-5 px-2 text-xs leading-relaxed">
                                 <strong>2 Michelin Stars.</strong> Exclusive tailored menu by Chef Jordi Artal. Sophisticated & Private.
                             </td>
                             <td class="py-5 px-2 text-right font-bold text-gray-800">€ 209 <span class="block text-[9px] font-normal text-gray-400">(Special Offer)</span></td>
                             <td class="py-5 px-2 text-center">
-                                <a href="#cincsentits" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded hover:bg-[#b09b86]">View Proposal</a>
+                                <a href="#cincsentits" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded">View Proposal</a>
                             </td>
                         </tr>
 
@@ -142,20 +145,20 @@
                         <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
                             <td class="py-5 pl-4">
                                 <span class="font-bold text-gray-800 block text-base serif-font">Compartir BCN</span>
-                                <div class="flex items-center gap-2 mt-1">
-                                    <span class="text-[10px] text-[#C8B29B] font-bold">4.5 ★</span> 
-                                    <span class="text-[10px] text-gray-300">|</span>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=Compartir+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1">
-                                        📍 Eixample
-                                    </a>
-                                </div>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Compartir+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1 mt-1" title="View on Google Maps">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    Eixample
+                                </a>
+                            </td>
+                            <td class="py-5 px-2 text-center">
+                                <span class="text-[12px] text-[#C8B29B] font-bold">4.5 ★</span>
                             </td>
                             <td class="py-5 px-2 text-xs leading-relaxed">
                                 <strong>Disfrutar Team.</strong> "Panchino" w/ caviar, Lobster. Premium Wines incl.
                             </td>
                             <td class="py-5 px-2 text-right font-bold text-gray-800">€ 193</td>
                             <td class="py-5 px-2 text-center">
-                                <a href="#compartir" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded hover:bg-[#b09b86]">View Menu</a>
+                                <a href="#compartir" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded">View Menu</a>
                             </td>
                         </tr>
 
@@ -163,20 +166,20 @@
                         <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
                             <td class="py-5 pl-4">
                                 <span class="font-bold text-gray-800 block text-base serif-font">Mesaquince</span>
-                                <div class="flex items-center gap-2 mt-1">
-                                    <span class="text-[10px] text-[#C8B29B] font-bold">4.6 ★</span> 
-                                    <span class="text-[10px] text-gray-300">|</span>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=Mesaquince+The+Brasa+Club" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1">
-                                        📍 The Brasa Club
-                                    </a>
-                                </div>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Mesaquince+The+Brasa+Club" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1 mt-1" title="View on Google Maps">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    The Brasa Club
+                                </a>
+                            </td>
+                            <td class="py-5 px-2 text-center">
+                                <span class="text-[12px] text-[#C8B29B] font-bold">4.6 ★</span>
                             </td>
                             <td class="py-5 px-2 text-xs leading-relaxed">
                                 <strong>Exclusive Atmosphere.</strong> Angus Steaks & Sweetbreads. Family style sharing.
                             </td>
                             <td class="py-5 px-2 text-right font-bold text-gray-800">€ 55</td>
                             <td class="py-5 px-2 text-center">
-                                <a href="#mesaquince" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded hover:bg-[#b09b86]">View Menu</a>
+                                <a href="#mesaquince" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded">View Menu</a>
                             </td>
                         </tr>
 
@@ -184,20 +187,20 @@
                         <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
                             <td class="py-5 pl-4">
                                 <span class="font-bold text-gray-800 block text-base serif-font">Mana 75</span>
-                                <div class="flex items-center gap-2 mt-1">
-                                    <span class="text-[10px] text-[#C8B29B] font-bold">4.4 ★</span> 
-                                    <span class="text-[10px] text-gray-300">|</span>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=Mana+75+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1">
-                                        📍 Barceloneta
-                                    </a>
-                                </div>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Mana+75+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1 mt-1" title="View on Google Maps">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    Barceloneta
+                                </a>
+                            </td>
+                            <td class="py-5 px-2 text-center">
+                                <span class="text-[12px] text-[#C8B29B] font-bold">4.4 ★</span>
                             </td>
                             <td class="py-5 px-2 text-xs leading-relaxed">
                                 Open Kitchen. <strong class="text-amber-600">Note: 21:30h Seating.</strong> Option for Open Bar (+€45).
                             </td>
                             <td class="py-5 px-2 text-right font-bold text-gray-800">€ 75</td>
                             <td class="py-5 px-2 text-center">
-                                <a href="#mana75" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded hover:bg-[#b09b86]">View Menu</a>
+                                <a href="#mana75" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded">View Menu</a>
                             </td>
                         </tr>
 
@@ -205,20 +208,20 @@
                         <tr class="border-b border-gray-100 bg-green-50/10 hover:bg-green-50/20 transition-colors">
                             <td class="py-5 pl-4">
                                 <span class="font-bold text-gray-800 block text-base serif-font">Tejada Mar</span>
-                                <div class="flex items-center gap-2 mt-1">
-                                    <span class="text-[10px] text-[#C8B29B] font-bold">4.3 ★</span> 
-                                    <span class="text-[10px] text-gray-300">|</span>
-                                    <a href="https://www.google.com/maps/search/?api=1&query=Tejada+Mar+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1">
-                                        📍 W Hotel Area
-                                    </a>
-                                </div>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Tejada+Mar+Barcelona" target="_blank" class="text-[10px] text-gray-500 link-map flex items-center gap-1 mt-1" title="View on Google Maps">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    W Hotel Area
+                                </a>
+                            </td>
+                            <td class="py-5 px-2 text-center">
+                                <span class="text-[12px] text-[#C8B29B] font-bold">4.3 ★</span>
                             </td>
                             <td class="py-5 px-2 text-xs leading-relaxed">
                                 Sea Views. Two Menu Options (Casual vs Celebration). <strong class="text-gray-600">Upgrade Available:</strong> Open Bar.
                             </td>
                             <td class="py-5 px-2 text-right font-bold text-gray-800">€75 - €95</td>
                             <td class="py-5 px-2 text-center">
-                                <a href="#tejadamar" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded hover:bg-[#b09b86]">View Menu</a>
+                                <a href="#tejadamar" class="btn-view inline-block px-4 py-2 bg-[#C8B29B] text-white text-[10px] font-bold uppercase tracking-wider rounded">View Menu</a>
                             </td>
                         </tr>
 
@@ -518,7 +521,7 @@
     </main>
 
     <footer class="bg-[#1a1a1a] text-white py-12 text-center">
-        <p class="text-[10px] uppercase tracking-[0.4em] text-[#C8B29B] mb-2">HEYVI EVENTS STUDIO</p>
+        <p class="text-[10px] uppercase tracking-[0.4em] text-[#C8B29B] mb-2">HEYVI EVENTS</p>
         <p class="text-[10px] text-gray-500">Barcelona © 2025</p>
     </footer>
 
