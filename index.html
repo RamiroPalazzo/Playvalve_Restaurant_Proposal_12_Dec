@@ -21,7 +21,7 @@
         .bg-beige { background-color: #C8B29B; }
         .border-beige { border-color: #C8B29B; }
         
-        /* Efecto Papel para las hojas */
+        /* Efecto Papel */
         .paper-sheet {
             background-color: #ffffff;
             box-shadow: 0 20px 50px rgba(0,0,0,0.1);
@@ -29,7 +29,6 @@
             position: relative;
             overflow: hidden;
         }
-        /* Textura sutil solo en pantallas grandes */
         @media (min-width: 1024px) {
             .paper-sheet::before {
                 content: "";
@@ -52,6 +51,17 @@
             background-color: #b09b86;
         }
         
+        /* Botón PDF */
+        .btn-pdf {
+            transition: all 0.2s ease;
+            border: 1px solid #e5e7eb;
+        }
+        .btn-pdf:hover {
+            border-color: #C8B29B;
+            color: #C8B29B;
+            background-color: #fffaf5;
+        }
+
         /* Link de Mapa */
         .link-map {
             transition: color 0.2s;
@@ -61,7 +71,7 @@
             text-decoration: underline;
         }
 
-        /* Scroll margin para que el header no tape el título al navegar */
+        /* Scroll margin */
         section {
             scroll-margin-top: 100px;
         }
@@ -98,7 +108,6 @@
                 </div>
             </div>
 
-            <!-- Tabla con scroll horizontal en móvil -->
             <div class="overflow-x-auto">
                 <table class="w-full text-left border-collapse min-w-[900px]">
                     <thead>
@@ -310,6 +319,12 @@
                     <h2 class="serif-font text-4xl text-gray-800 uppercase">Compartir</h2>
                     <h3 class="serif-font text-xl text-beige italic">Barcelona</h3>
                     <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
+                    <div class="mt-4">
+                        <a href="pdfs/compartir.pdf" target="_blank" class="btn-pdf inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            View Original Menu (PDF)
+                        </a>
+                    </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
                     <div>
@@ -364,6 +379,12 @@
                         <span class="inline-block w-1.5 h-1.5 rounded-full bg-amber-400"></span> 
                         Please note: Late seating availability at 21:30h
                     </p>
+                    <div class="mt-4">
+                        <a href="pdfs/mana75.pdf" target="_blank" class="btn-pdf inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            View Original Menu (PDF)
+                        </a>
+                    </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
                     <div>
@@ -413,6 +434,12 @@
                     <h3 class="serif-font text-xl text-beige italic">Museu d'Història de Catalunya</h3>
                     <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
                     <p class="text-xs text-gray-500 mt-2 font-medium">Glass dining room (Comedor Acristalado) with Port Views.</p>
+                    <div class="mt-4">
+                        <a href="pdfs/sagardi.pdf" target="_blank" class="btn-pdf inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            View Original Menu (PDF)
+                        </a>
+                    </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -491,6 +518,12 @@
                     <h2 class="serif-font text-4xl text-gray-800 uppercase">MESAQUINCE</h2>
                     <h3 class="serif-font text-xl text-beige italic">The Brasa Club</h3>
                     <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
+                    <div class="mt-4">
+                        <a href="pdfs/mesaquince.pdf" target="_blank" class="btn-pdf inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            View Original Menu (PDF)
+                        </a>
+                    </div>
                 </div>
                 <div class="text-center max-w-lg mx-auto">
                     <h4 class="text-xs font-bold uppercase tracking-widest text-gray-800 mb-4 border-b pb-2">Argentinian Grill Experience</h4>
@@ -532,6 +565,12 @@
                     <h2 class="serif-font text-4xl text-gray-800 uppercase">TEJADA MAR</h2>
                     <h3 class="serif-font text-xl text-beige italic">Barceloneta Beachfront</h3>
                     <div class="w-16 h-0.5 bg-[#C8B29B] mx-auto mt-6 opacity-60"></div>
+                    <div class="mt-4">
+                        <a href="pdfs/tejadamar.pdf" target="_blank" class="btn-pdf inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            View Original Menu (PDF)
+                        </a>
+                    </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Option A -->
